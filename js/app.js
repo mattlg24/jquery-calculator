@@ -11,8 +11,6 @@ $('.buttons').on('click', '.operator', function(event) {
     var operator = ($(event.target).text());
     if (operator !== '=') {
         $('#screen').append(operator)
-    } else {
-        // console.log(operator)
     }
 })
 
@@ -69,5 +67,4 @@ $('#equals').on('click', function() {
         total = number1 - number2
         $('#screen').append(total)
     }
-
 });
